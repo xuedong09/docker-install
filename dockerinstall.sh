@@ -14,6 +14,7 @@ sudo apt-get install apparmor -y && \
 sudo apt-get install docker-engine -y && \
 sudo apt-get upgrade docker-engine -y && \
 sudo service docker start; \
+sudo apt-get install python-pip -y && \
 sudo pip install docker-compose && \
 sudo sh -c "curl -L https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/bash/docker-compose > /etc/bash_completion.d/docker-compose";
 sudo groupadd docker;
